@@ -18,7 +18,8 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <h1>{count}</h1>
+        {count <= 10 ? <h1>{count}</h1> : <h1>Aukat Ki Bahar</h1>}
+
         <button onClick={() => setCount((count) => count + 1)}>
           Ginti Badhau
         </button>
